@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IoT Metabolic Syndrome Monitoring</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⌬</span>
+        <span class="logo-text">MetaboSense</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#intro">Overview</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#sensors">Sensors</a></li>
+          <li><a href="#patient">Patient</a></li>
+          <li><a href="#alerts">Alerts</a></li>
+          <li><a href="#footer" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="intro" class="intro">
+    <div class="intro-content">
+      <p class="eyebrow">Remote Patient Monitoring</p>
+      <h1>Continuous insight into metabolic syndrome, in real time.</h1>
+      <p class="intro-text">
+         This project is designed for educational purpose in KBTU 2026 by Zere Baizhan. This project is about 
+         IoT sensors that track the five core indicators of metabolic syndrome: temperature, glucose, heart rate, blood pressure and cardiac rhythm and then
+        streams them to a single dashboard for doctors. 
+      </p>
+      <div class="intro-stats">
+        <div class="stat">
+          <span class="stat-value">5</span>
+          <span class="stat-label">Live parameters</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">24/7</span>
+          <span class="stat-label">Monitoring</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value"> < 2sec</span>
+          <span class="stat-label">Data latency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PATIENT DASHBOARD ===== -->
+  <section id="dashboard" class="dashboard">
+    <h2 class="section-title">Patient Dashboard</h2>
+    <p class="section-subtitle">Live readings from connected sensors</p>
+
+    <div class="dashboard-grid">
+      <article class="metric-card" id="metric-temp">
+        <div class="metric-icon">🌡️</div>
+        <h3>Body Temperature</h3>
+        <p class="metric-value">36.8 <span class="unit">°C</span></p>
+        <p class="metric-status status-normal">Normal</p>
+      </article>
+
+      <article class="metric-card" id="metric-glucose">
+        <div class="metric-icon">🩸</div>
+        <h3>Blood Glucose</h3>
+        <p class="metric-value">142 <span class="unit">mg/dL</span></p>
+        <p class="metric-status status-warning">High</p>
+      </article>
+
+      <article class="metric-card" id="metric-heart">
+        <div class="metric-icon">💓</div>
+        <h3>Heart Rate</h3>
+        <p class="metric-value">78 <span class="unit">bpm</span></p>
+        <p class="metric-status status-normal">Normal</p>
+      </article>
+
+      <article class="metric-card" id="metric-bp">
+        <div class="metric-icon">🫀</div>
+        <h3>Blood Pressure</h3>
+        <p class="metric-value">138/89 <span class="unit">mmHg</span></p>
+        <p class="metric-status status-warning">High</p>
+      </article>
+
+      <article class="metric-card" id="metric-ecg">
+        <div class="metric-icon">📈</div>
+        <h3>ECG</h3>
+        <p class="metric-value">Sinus <span class="unit">rhythm</span></p>
+        <p class="metric-status status-normal">Normal</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== SENSOR CARDS ===== -->
+  <section id="sensors" class="sensors">
+    <h2 class="section-title">Connected Sensors</h2>
+    <p class="section-subtitle">Device-level status and latest measurement</p>
+
+    <div class="sensor-grid">
+      <div class="sensor-card">
+        <div class="sensor-card-header">
+          <span class="sensor-name">Temp Sensor</span>
+          <span class="badge badge-online">Online</span>
+        </div>
+        <p class="sensor-value">36.8 <span class="sensor-unit">°C</span></p>
+        <p class="sensor-meta">Last sync: 12s ago</p>
+      </div>
+
+      <div class="sensor-card">
+        <div class="sensor-card-header">
+          <span class="sensor-name">Glucose Monitor</span>
+          <span class="badge badge-online">Online</span>
+        </div>
+        <p class="sensor-value">142 <span class="sensor-unit">mg/dL</span></p>
+        <p class="sensor-meta">Last sync: 30s ago</p>
+      </div>
+
+      <div class="sensor-card">
+        <div class="sensor-card-header">
+          <span class="sensor-name">Wrist HR Band</span>
+          <span class="badge badge-online">Online</span>
+        </div>
+        <p class="sensor-value">78 <span class="sensor-unit">bpm</span></p>
+        <p class="sensor-meta">Last sync: 5s ago</p>
+      </div>
+
+      <div class="sensor-card">
+        <div class="sensor-card-header">
+          <span class="sensor-name">Cuff Blood Pressure</span>
+          <span class="badge badge-online">Online</span>
+        </div>
+        <p class="sensor-value">138/89 <span class="sensor-unit">mmHg</span></p>
+        <p class="sensor-meta">Last sync: 2m ago</p>
+      </div>
+
+      <div class="sensor-card">
+        <div class="sensor-card-header">
+          <span class="sensor-name">ECG Lead-3</span>
+          <span class="badge badge-offline">Offline</span>
+        </div>
+        <p class="sensor-value">— <span class="sensor-unit">n/a</span></p>
+        <p class="sensor-meta">Last sync: 18m ago</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PATIENT INFORMATION ===== -->
+  <section id="patient" class="patient">
+    <h2 class="section-title">Patient Information</h2>
+
+    <div class="patient-panel">
+      <table class="patient-table">
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <td>Jamal Kerim</td>
+          </tr>
+          <tr>
+            <th>Patient ID</th>
+            <td>01234</td>
+          </tr>
+          <tr>
+            <th>Age / Sex</th>
+            <td>54 / Female</td>
+          </tr>
+          <tr>
+            <th>Condition</th>
+            <td>Metabolic syndrome (Stage II)</td>
+          </tr>
+          <tr>
+            <th>Monitoring status</th>
+            <td><span class="badge badge-online">Active</span></td>
+          </tr>
+          <tr>
+            <th>Attending physician</th>
+            <td>Dr. A. Abdrakhman</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form class="patient-form">
+        <h3>Care Team Note</h3>
+        <label for="note">Add an observation</label>
+        <textarea id="note" name="note" rows="4" placeholder="e.g. Patient reports an anxiet attack"></textarea>
+        <button type="submit" class="btn btn-primary">Save Note</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== ALERTS ===== -->
+  <section id="alerts" class="alerts">
+    <h2 class="section-title">Alert Examples</h2>
+    <p class="section-subtitle">How the system flags normal vs abnormal readings</p>
+
+    <div class="alerts-grid">
+      <div class="alert-item alert-normal">
+        <span class="alert-icon">✔</span>
+        <div>
+          <p class="alert-title">Heart rate within range</p>
+          <p class="alert-desc">78 bpm - steady, no action needed.</p>
+        </div>
+      </div>
+
+      <div class="alert-item alert-warning">
+        <span class="alert-icon">⚠</span>
+        <div>
+          <p class="alert-title">Blood glucose elevated</p>
+          <p class="alert-desc">142 mg/dL - above target range of 70–130 mg/dL.</p>
+        </div>
+      </div>
+
+      <div class="alert-item alert-critical">
+        <span class="alert-icon">⛔</span>
+        <div>
+          <p class="alert-title">Blood pressure critical</p>
+          <p class="alert-desc">168/102 mmHg recorded at 03:14 - clinician notified.</p>
+        </div>
+      </div>
+
+      <div class="alert-item alert-normal">
+        <span class="alert-icon">✔</span>
+        <div>
+          <p class="alert-title">Body temperature stable</p>
+          <p class="alert-desc">36.8 °C- within normal range.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⌬</span>
+        <span class="logo-text">MetaboSense</span>
+        <p>IoT-based monitoring for metabolic syndrome patients.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>support@metabosense.example</p>
+        <p>+7 (700) 7070</p>
+        <p>Almaty, Kazakhstan</p>
+      </div>
+      <div class="footer-links">
+        <h4>System</h4>
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#sensors">Sensors</a></li>
+          <li><a href="#alerts">Alerts</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">Seminar3</p>
+  </footer>
+
+</body>
+</html>
