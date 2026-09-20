@@ -1,301 +1,240 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyPulse IoT — Metabolic Health</title>
+    <title>SkyPulse IoT</title>
 
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+
 </head>
 
 <body>
 
 <header>
-    <div class="header">
-        <div class="brand">
-            <i class="fa-solid fa-cloud-pulse"></i>
-            <b>SkyPulse IoT</b>
-        </div>
-
-
-    <nav>
-        <a href="#intro">Home</a>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#sensors">Sensors</a>
-        <a href="#patient">Patient</a>
-        <a href="#alerts">Alerts</a>
-        <a href="#footer">Contact</a>
-    </nav>
-</div>
+    <h2><i class="fa-solid fa-heart-pulse"></i> SkyPulse IoT</h2>
+<nav>
+    <a href="#intro">Home</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#sensors">Sensors</a>
+    <a href="#patient">Patient</a>
+    <a href="#alerts">Alerts</a>
+    <a href="#footer">Contact</a>
+</nav>
 
 
 </header>
 
 <main>
 
+<!-- INTRODUCTION -->
 
-<!-- INTRO -->
 <section id="intro" class="hero">
 
-    <div>
-        <h1>
-            IoT Platform for
-            <span>Metabolic Health</span>
-        </h1>
 
-        <p>
-            A remote monitoring system that tracks important
-            health indicators in real time.
-        </p>
+<div>
+    <h1>IoT Platform for <span>Metabolic Health</span></h1>
 
-        <p>
-            Educational research project at KBTU 2026 by
-            <b>Zere Baizhan</b>.
-        </p>
-    </div>
+    <p>
+        A remote monitoring system that tracks important
+        health indicators in real time.
+    </p>
 
-    <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-cvQ4Ioz-ZsVJQJwOcrKvanw9V7yxFkYkmo56hoqPVA&s=10"
-        alt="Metabolic Health">
+    <p>
+        Educational project at KBTU 2026 by <b>Zere Baizhan</b>.
+    </p>
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-cvQ4Ioz-ZsVJQJwOcrKvanw9V7yxFkYkmo56hoqPVA&s=10"
+     alt="Metabolic Health">
+
+
 </section>
 
+<!-- PATIENT DASHBOARD -->
 
-<!-- DASHBOARD -->
 <section id="dashboard">
 
-    <h2>Patient Dashboard</h2>
 
-    <div class="patient">
-        <h3>Jamal Kerim</h3>
-        <p>ID: #01234 | 54 years old | Female</p>
+<h2>Patient Dashboard</h2>
+
+<div class="patient">
+    <h3>Jamal Kerim</h3>
+    <p>ID: #01234 | 54 years old | Female</p>
+</div>
+
+<div class="metrics">
+
+    <div class="metric">
+        <b>Blood Glucose</b>
+        <strong>142 mg/dL</strong>
+        <span class="warning">High</span>
     </div>
 
-
-    <div class="metrics">
-
-        <div class="metric">
-            <i class="fa-solid fa-droplet"></i>
-            <b>Blood Glucose</b>
-            <strong>142 mg/dL</strong>
-            <span class="warning">High</span>
-        </div>
-
-        <div class="metric">
-            <i class="fa-solid fa-temperature-quarter"></i>
-            <b>Body Temperature</b>
-            <strong>36.8 °C</strong>
-            <span class="normal">Normal</span>
-        </div>
-
-        <div class="metric">
-            <i class="fa-solid fa-gauge-high"></i>
-            <b>Blood Pressure</b>
-            <strong>138/89 mmHg</strong>
-            <span class="warning">High</span>
-        </div>
-
-        <div class="metric">
-            <i class="fa-solid fa-heart-pulse"></i>
-            <b>Heart Rate</b>
-            <strong>78 BPM</strong>
-            <span class="normal">Normal</span>
-        </div>
-
-        <div class="metric">
-            <i class="fa-solid fa-wave-square"></i>
-            <b>ECG Rhythm</b>
-            <strong>Sinus rhythm</strong>
-            <span class="normal">Normal</span>
-        </div>
-
+    <div class="metric">
+        <b>Body Temperature</b>
+        <strong>36.8 °C</strong>
+        <span class="normal">Normal</span>
     </div>
+
+    <div class="metric">
+        <b>Blood Pressure</b>
+        <strong>138/89 mmHg</strong>
+        <span class="warning">High</span>
+    </div>
+
+    <div class="metric">
+        <b>Heart Rate</b>
+        <strong>78 BPM</strong>
+        <span class="normal">Normal</span>
+    </div>
+
+    <div class="metric">
+        <b>ECG</b>
+        <strong>Sinus rhythm</strong>
+        <span class="normal">Normal</span>
+    </div>
+
+</div>
+
 
 </section>
-
 
 <!-- SENSORS -->
+
 <section id="sensors">
 
-    <h2>Sensors Status</h2>
-    <p>IoT hardware connections</p>
 
-    <div class="sensors">
+<h2>Sensors</h2>
 
-        <div class="sensor">
-            <b>Wrist HR Band</b>
-            <span class="online">Online</span>
-            <p>78 bpm</p>
-            <small>Last sync: 5s ago</small>
-        </div>
+<div class="sensors">
 
-        <div class="sensor">
-            <b>Cuff Pressure</b>
-            <span class="online">Online</span>
-            <p>138/89 mmHg</p>
-            <small>Last sync: 2m ago</small>
-        </div>
-
-        <div class="sensor">
-            <b>Temperature Sensor</b>
-            <span class="online">Online</span>
-            <p>36.8 °C</p>
-            <small>Last sync: 12s ago</small>
-        </div>
-
-        <div class="sensor">
-            <b>ECG Lead-3</b>
-            <span class="offline">Offline</span>
-            <p>—</p>
-            <small>Last sync: 18m ago</small>
-        </div>
-
-        <div class="sensor">
-            <b>Glucose Sensor</b>
-            <span class="online">Online</span>
-            <p>142 mg/dL</p>
-            <small>Last sync: 30s ago</small>
-        </div>
-
+    <div class="sensor">
+        <b>Heart Rate Sensor</b>
+        <p>78 BPM</p>
+        <span class="normal">Online</span>
     </div>
 
-</section>
+    <div class="sensor">
+        <b>Blood Pressure Sensor</b>
+        <p>138/89 mmHg</p>
+        <span class="normal">Online</span>
+    </div>
 
+    <div class="sensor">
+        <b>Temperature Sensor</b>
+        <p>36.8 °C</p>
+        <span class="normal">Online</span>
+    </div>
+
+    <div class="sensor">
+        <b>ECG Sensor</b>
+        <p>Sinus rhythm</p>
+        <span class="offline">Offline</span>
+    </div>
+
+    <div class="sensor">
+        <b>Glucose Sensor</b>
+        <p>142 mg/dL</p>
+        <span class="normal">Online</span>
+    </div>
+
+</div>
+
+
+</section>
 
 <!-- PATIENT INFORMATION -->
+
 <section id="patient">
 
-    <h2>Patient Profile</h2>
-    <p>Clinical information</p>
 
-    <div class="patient-info">
+<h2>Patient Information</h2>
 
-        <table>
-            <tr>
-                <th>Name</th>
-                <td>Jamal Kerim</td>
-            </tr>
+<table>
 
-            <tr>
-                <th>Patient ID</th>
-                <td>01234</td>
-            </tr>
+    <tr>
+        <th>Name</th>
+        <td>Jamal Kerim</td>
+    </tr>
 
-            <tr>
-                <th>Age / Sex</th>
-                <td>54 / Female</td>
-            </tr>
+    <tr>
+        <th>Patient ID</th>
+        <td>01234</td>
+    </tr>
 
-            <tr>
-                <th>Condition</th>
-                <td>Metabolic syndrome</td>
-            </tr>
+    <tr>
+        <th>Age / Sex</th>
+        <td>54 / Female</td>
+    </tr>
 
-            <tr>
-                <th>Status</th>
-                <td class="online">Active</td>
-            </tr>
+    <tr>
+        <th>Condition</th>
+        <td>Metabolic syndrome</td>
+    </tr>
 
-            <tr>
-                <th>Doctor</th>
-                <td>Dr. A. Abdrakhman</td>
-            </tr>
-        </table>
+    <tr>
+        <th>Status</th>
+        <td class="normal">Active</td>
+    </tr>
 
+</table>
 
-        <form>
-            <h3>Care Team Note</h3>
+<form>
 
-            <label for="note">Add an observation</label>
+    <h3>Care Team Note</h3>
 
-            <textarea
-                id="note"
-                placeholder="Write an observation...">
-            </textarea>
+    <label for="note">Observation:</label>
 
-            <button type="submit">
-                Save Note
-            </button>
-        </form>
+    <textarea id="note"
+              placeholder="Write an observation..."></textarea>
 
-    </div>
+    <button>Save Note</button>
+
+</form>
 
 </section>
-
 
 <!-- ALERTS -->
+
 <section id="alerts">
 
-    <h2>Alerts</h2>
-    <p>Current measurement alerts</p>
+<h2>Alerts</h2>
 
-    <div class="alert warning-alert">
-        <i class="fa-solid fa-triangle-exclamation"></i>
+<div class="alert warning-alert">
+    <b>Blood glucose elevated</b>
+    <p>142 mg/dL — above target range.</p>
+</div>
 
-        <div>
-            <b>Blood glucose elevated</b>
-            <p>
-                142 mg/dL — above target range of 70–130 mg/dL.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="alert normal-alert">
-        <i class="fa-solid fa-circle-check"></i>
-
-        <div>
-            <b>Body temperature stable</b>
-            <p>
-                36.8 °C — within normal range.
-            </p>
-        </div>
-    </div>
+<div class="alert normal-alert">
+    <b>Body temperature stable</b>
+    <p>36.8 °C — normal.</p>
+</div>
 
 </section>
-
 
 </main>
 
 <!-- FOOTER -->
 
-
 <footer id="footer">
 
-    <h3>
-        <i class="fa-solid fa-cloud-pulse"></i>
-        SkyPulse IoT
-    </h3>
+<h3>SkyPulse IoT</h3>
 
-    <p>
-        Remote IoT-based monitoring system for metabolic syndrome patients.
-    </p>
+<p>IoT healthcare monitoring system</p>
+<p>Email: support@met.example</p>
+<p>Phone: +7 (700) 7070</p>
+<p>Almaty, Kazakhstan</p>
 
-    <p>
-        Email: support@met.example
-    </p>
+<hr>
 
-    <p>
-        Phone: +7 (700) 7070
-    </p>
-
-    <p>
-        Location: Almaty, Kazakhstan
-    </p>
-
-    <p>
-        Seminar 3 Project — KBTU 2026
-    </p>
-
-    <hr>
-
-    <p>
-        © 2026 SkyPulse IoT. Educational Research Project by Zere Baizhan.
-    </p>
+<p>Seminar 3 Project — KBTU 2026</p>
 
 </footer>
 
